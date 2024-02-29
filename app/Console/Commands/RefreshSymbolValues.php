@@ -63,7 +63,6 @@ class RefreshSymbolValues extends Command
             } catch (\Exception $e) {
                 Log::error('Unable to load data for symbol ' . $symbol . ': ' . $e->getMessage());
             }
-            break;
         }
         if ($firstRun) {
             $this->stockService->setPrevious();
